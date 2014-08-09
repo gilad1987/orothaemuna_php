@@ -9,7 +9,9 @@ var playerStateController,
 
 
 $(document).ready(function(){
-    GT.media.audio5js = new Audio5js();
+    GT.media.audio5js = new Audio5js({
+        codecs: ['mp4', 'vorbis', 'mp3']
+    });
 
     playerStateController = new GT.media.HTML5PlayerStateController(GT.media.audio5js);
     playerStateView = new GT.media.PlayerStateView(playerStateController);

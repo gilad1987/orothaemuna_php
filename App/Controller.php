@@ -16,6 +16,7 @@ class App_Controller
         
     }
 
+
     protected function getModel()
     {
     	$ctrlNameArr = explode('_', get_class($this));

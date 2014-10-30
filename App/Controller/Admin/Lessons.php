@@ -32,7 +32,6 @@ class App_Controller_Admin_Lessons extends App_Controller_Admin_Base
 					}
 					if($fileds_name[$key] == "old_src" && !empty($val)){
 						if($this->checkIsFile($val)){
-							$new_row['new_src'] = $this->getRandomFileName(true);
                             $new_row['new_src'] = $this->getRandomFileName(true);
 							$val = iconv('windows-1255','UTF-8', $val );
 

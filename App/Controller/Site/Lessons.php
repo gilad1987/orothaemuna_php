@@ -130,7 +130,9 @@ class App_Controller_Site_Lessons extends App_Controller_Admin_Base
 												"lecturer_id"=>$requeset->lecturer_id,
 												
 		)),true);
-		
+
+
+
 		if(isset($rows[0])){
 
 			$ret = array('lecturer'=>isset($rows[0]->lecturers_text)?$rows[0]->lecturers_text:null,

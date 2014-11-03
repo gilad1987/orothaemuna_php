@@ -5,6 +5,7 @@ class App_Controller_Site_Index extends App_Controller_Site_Base
 	
     public function indexAction()
     {
+
         $this->getFilters();
         $controller = new App_Controller_Site_Lessons();
         $model = $controller->getModel();

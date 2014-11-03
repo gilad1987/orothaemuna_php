@@ -99,9 +99,11 @@
                                 <input type="hidden" name="parse" id="parse" value="json"/>
 								<div class="section-select">
 									<div class="wrap-personal-select">
-										<select id="lecturer_id" name="lecturer_id" class="filter">
+
+                                        <select id="lecturer_id" name="lecturer_id" class="filter">
 											<option value="0">בחר מרצה</option>
 											<?php if(isset($this->lecturers)):?>
+
 											<?php foreach ($this->lecturers as $lecturer): ?>
 											<option value="<?php echo $this->escape($lecturer->id);?>"><?php echo $this->escape($lecturer->text);?></option>
 											<?php endforeach;?>

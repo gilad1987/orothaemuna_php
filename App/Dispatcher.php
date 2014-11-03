@@ -1,4 +1,5 @@
 <?php
+
 class App_Dispatcher
 {
     private static function initAutoLoad()
@@ -54,8 +55,8 @@ class App_Dispatcher
        			}
        		}
 
-
             $ctrl = new $className();
+
             $ctrl->dispatch($http->getActionName().'Action');
             
         }catch (App_Request_Params_Exceptions $e){

@@ -79,6 +79,8 @@ class App_Config
 	
 	private function setCurrentMode()
 	{
+        return $this->currentMode = $this->development;
+
 		if($_SERVER['SERVER_PORT'] == $this->production->port){
 			if(isset($_GET[$this->testing->test_query_param])){
 				$this->production->frontController->displayExceptions = $this->testing->frontController->displayExceptions;

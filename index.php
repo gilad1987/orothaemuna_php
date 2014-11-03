@@ -4,4 +4,6 @@
 // 	die();
 // }
 require_once 'App/Dispatcher.php';
+
 App_Dispatcher::run();
+

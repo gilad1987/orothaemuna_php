@@ -57,14 +57,19 @@ class App_Controller
     }
     
     protected function getFilters(){
-    	$yearDbTable = new App_Model_DbTable_Years();
+
+        $yearDbTable = new App_Model_DbTable_Years();
     	$this->_view->years = $yearDbTable->fetchAll(array());
-    
+
     	$seriesDbTable = new App_Model_DbTable_Seriess();
     	$this->_view->series = $seriesDbTable->fetchAll(array());
-    
-    	$lecturersDbTable = new App_Model_DbTable_Lecturers();
+
+
+
+        $lecturersDbTable = new App_Model_DbTable_Lecturers();
+
     	$this->_view->lecturers = $lecturersDbTable->fetchAll(array());
+
 
     	$locationsDbTable = new App_Model_DbTable_Locations();
     	$this->_view->places = $locationsDbTable->fetchAll(array());

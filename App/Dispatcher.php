@@ -58,7 +58,7 @@ class App_Dispatcher
             $ctrl = new $className();
 
             $ctrl->dispatch($http->getActionName().'Action');
-            
+
         }catch (App_Request_Params_Exceptions $e){
             $message =  $e->getMessage();
             echo json_encode(array('error'=>$message));
@@ -72,7 +72,7 @@ class App_Dispatcher
             App_Headers::send500();
 
         }catch(Exception $e){
-        	
+
         	$massege = '';
         	if(DISPLAY_EXCEPTIONS){
 
@@ -84,7 +84,7 @@ class App_Dispatcher
         			die();
         		}
 //         		die( $massege );
-        		
+
         	}
 
             if($http->isAdminModule()){

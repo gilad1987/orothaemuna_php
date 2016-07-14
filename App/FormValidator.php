@@ -15,7 +15,7 @@
  * @version 1.0
  * @access public
  */
-class App_FormValidator
+class FormValidator
 {
     public static $regexes = Array(
     		'date' => "^[0-9]{4}[-/][0-9]{1,2}[-/][0-9]{1,2}\$",
